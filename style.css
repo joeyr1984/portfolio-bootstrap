@@ -1,0 +1,33 @@
+.nav-theme{
+    color: #36454f;
+    font-size: small;
+    padding: 10px;
+    margin: 0px;
+}
+#ducky-logo {
+    width: 50px;
+    height: auto;
+}
+#bunker-logo {
+    width: 100px;
+    height: auto;
+}
+a.nav-link.nav-anchor:link,a.nav-link.nav-anchor:visited,a.nav-link.nav-anchor:hover,a.nav-link.nav-anchor:active {
+color: #36454f;    
+
+}
+.navbar-nav .nav-link {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+#about {
+    background-color: #F7E321;
+}
+#about-us-text {
+    width: 45%;
+    padding-top: 15px;
+    
+}
+#the-team{
+    width: 20%;
+}
