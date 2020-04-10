@@ -32,8 +32,20 @@ color: #36454f;
     padding-top: 15px;
     
 }
+.col-lg-12 {
+    padding-left: 45%;
+}
 #the-team{
     width: 20%;
+}
+footer {
+    background-color: #F7E321;
+    color: #36454f;
+}
+#footer-logo {
+    width: 30%;
+    height: auto;
+    padding: 30px;
 }
 @media only screen and (max-width: 600px) {
     #ducky-logo {
