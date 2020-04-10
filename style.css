@@ -1,5 +1,6 @@
 .nav-theme{
     color: #36454f;
+    background-color: white;
     font-size: small;
     padding: 10px;
     margin: 0px;
@@ -8,9 +9,12 @@
     width: 50px;
     height: auto;
 }
+
 #bunker-logo {
     width: 100px;
     height: auto;
+    text-align: center;
+    display: block;
 }
 a.nav-link.nav-anchor:link,a.nav-link.nav-anchor:visited,a.nav-link.nav-anchor:hover,a.nav-link.nav-anchor:active {
 color: #36454f;    
@@ -30,4 +34,18 @@ color: #36454f;
 }
 #the-team{
     width: 20%;
+}
+@media only screen and (max-width: 600px) {
+    #ducky-logo {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 40px;
+    }
+    #bunker-logo {
+        width: 200px;
+    }
+    body{
+        padding-top: 100px;
+    }
 }
