@@ -10,21 +10,22 @@
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <!--FONT-->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+  integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
   <!--MY OWN STYLE SHEET-->
   <link rel="stylesheet" href="./style.css">
 </head>
 
-<body>
+<body class="container-fluid m-0 p-0">
   <!--Nav-->
-  <nav class="navbar fixed-top nav-theme row">
-
+  <nav class="navbar fixed-top nav-theme row no gutters">
     <a class="col-sm" href="./index.html"><img src="./images/ducky.svg" id="ducky-logo"
-        alt="logo image of rubber ducky"></a>
-
-    <div class="col-sm"><a href="index.html"><img class="mx-auto" src="./images/Bunker.svg" id="bunker-logo" alt="company logo for bunker"></a>
-    </div>
+        alt="logo image of rubber ducky">
+      </a>
     <div class="col-sm">
-      <ul class="navbar-nav navbar-expand-lg flex-row nav-justified">
+      <a href="index.html"><img class="mx-auto" src="./images/Bunker.svg" id="bunker-logo" alt="company logo for bunker"></a>
+    </div>
+      <ul class="nav col-sm nav-theme-link">
         <li class="nav-item">
           <a class="nav-link nav-anchor" href="./index.html" title="find more about Bunker by clicking here">About<span
               class="sr-only">(current)</span></a>
@@ -36,113 +37,113 @@
           <a class="nav-link nav-anchor" href="./contact.html" title="click here to contact us">Contact</a>
         </li>
       </ul>
-    </div>
   </nav>
+
   <!--About Us section-->
-  <br><br><br>
-  <div>
-    <!--COLOUMN ONE WITH PICTURE AND ABOUT-->
+  <main>
     <div class="row no-gutters">
-      <div class="col-sm-6"><img src="./images/bunker office.svg" alt="picture of bunker office space"
-          class="img-fluid">
-      </div>
-      <div class="col-sm-6" id="about">
-        <div class="clearfix">
-          <img id="about-us-text" src="./images/about us.svg" alt="about us text" class="img-fluid float-left">
-          <p class="float-right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil perspiciatis est culpa
-            earum aliquid esse
+      <div class="col-sm-6" id="bunker-office-image" title="Picture of the bunker office space"></div>
+      <div class="col-sm-6 about">
+        <div class="float-left pr-3">
+          <img id="about-us-text" src="./images/about us.svg" alt="about us text">
+        </div>
+        <div class="pr-3>"
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil perspiciatis est culpa earum aliquid esse
             dolorem eius rem fuga perferendis magni odio omnis cumque, commodi quisquam beatae voluptates ea
             reprehenderit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil perspiciatis est culpa earum
             aliquid esse dolorem eius rem fuga perferendis magni odio omnis cumque, commodi quisquam beatae voluptates
-            ea
-            reprehenderit.Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            ea reprehenderit.Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+            <p class="text-truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil perspiciatis est culpa earum aliquid esse
+              dolorem eius rem fuga perferendis magni odio omnis cumque, commodi quisquam beatae voluptates ea
+              reprehenderit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil perspiciatis est culpa earum
+              aliquid esse dolorem eius rem fuga perferendis magni odio omnis cumque, commodi quisquam beatae voluptates
+              ea reprehenderit.Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
       </div>
     </div>
-  </div>
-  <br><br>
   <!--COLUMN 2 WITH "THE TEAM-->
-  <div class="row">
-    <div class="col-lg-12">
-    <img src="./images/the team.svg"  alt="stylized words that say the team" id="the-team">
+  <div class="row no gutters">
+    <div class="col-12">
+    <img src="./images/the team.svg" class="mx-auto mt-3" id="the-team" alt="stylized words that say the team">
     </div>
   </div>
-  <br><br>
-  <!--COLUMN 3 WITH PICTURES OF THE SQUAD-->
-  <div>
-    <div class="row">
-      <div class="col-md">
+    <!--COLUMN 3 WITH PICTURES OF THE SQUAD-->
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-4">
         <div class="card mb-4 shadow-sm">
-          <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
-            preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-              dy=".3em">Thumbnail</text>
-          </svg>
+          <img class="card-img-top"
+              src="./images/joey.svg">
           <div class="card-body">
-            <p class="card-text"><strong>JOEY REYES</strong> Process-oriented Full Stack Web Developer with years of
-              experience
-              working in fast-paced creative environment. Key strengths: strong analytical, problem solving and
-              critical thinking skills; excellent written, verbal, interpersonal communications skills. Detail oriented,
-              strong
-              follow-through, able to effectively manage competing priorities and meet aggressive deadlines.</p>
+            <h5 class="card-title">Joey Reyes</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil perspiciatis est culpa
+                earum aliquid esse dolorem eius rem fuga perferendis magni odio omnis cumque, commodi quisquam beatae
+                voluptates ea
+                reprehenderit.Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
         </div>
       </div>
-      <div class="col-md">
+      <div class="col-md-4">
         <div class="card mb-4 shadow-sm">
-          <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
-            preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-              dy=".3em">Thumbnail</text>
-          </svg>
+          <img class="card-img-top"
+            src="https://www.svgimages.com/svg-image/s4/will-smith-stencil-256x256.png" />
           <div class="card-body">
-            <p class="card-text"><strong>JOEY REYES</strong> Process-oriented Full Stack Web Developer with years of
-              experience
-              working in fast-paced creative environment. Key strengths: strong analytical, problem solving and
-              critical thinking skills; excellent written, verbal, interpersonal communications skills. Detail oriented,
-              strong
-              follow-through, able to effectively manage competing priorities and meet aggressive deadlines.</p>
+            <h5 class="card-title">Fresh Prince</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil perspiciatis est culpa
+              earum aliquid esse
+              dolorem eius rem fuga perferendis magni odio omnis cumque, commodi quisquam beatae voluptates ea
+              reprehenderit.Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
         </div>
       </div>
-      <div class="col-md">
+      <div class="col-md-4">
         <div class="card mb-4 shadow-sm">
-          <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
-            preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-              dy=".3em">Thumbnail</text>
-          </svg>
+          <img class="card-img-top"
+            src="https://www.svgimages.com/svg-image/s4/will-smith-stencil-256x256.png" />
           <div class="card-body">
-            <p class="card-text"><strong>JOEY REYES</strong> Process-oriented Full Stack Web Developer with years of
-              experience
-              working in fast-paced creative environment. Key strengths: strong analytical, problem solving and
-              critical thinking skills; excellent written, verbal, interpersonal communications skills. Detail oriented,
-              strong
-              follow-through, able to effectively manage competing priorities and meet aggressive deadlines.</p>
+            <h5 class="card-title">Will Smith</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil perspiciatis est culpa
+              earum aliquid esse
+              dolorem eius rem fuga perferendis magni odio omnis cumque, commodi quisquam beatae voluptates ea
+              reprehenderit.Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
         </div>
       </div>
     </div>
-  </div>
+</main>
   <!--FOOTER-->
-  <footer>
-  <div class="row">
-    <div class="col-md-4">
-      Contact
-
+  <footer class="footer theme-footer p-3">
+    <div class="row">
+      <div class="col-10">
+        <div class="row" id="contact-us-info">
+          <span class="col-sm-2 font-weight-bold d-flex justify-content-end">CONTACT US</span>
+          <span class="col-sm-10">+1 (123)456-7890<br />webdev@bunker.com</span>
+        </div>
+      </div>
+      <div class="col-2">
+        <ul class="d-flex list-inline justify-content-end">
+          <li class="list-inline-item">
+            <a class="footer-link" ref="" target="_blank" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="footer-link" href="" target="_blank" aria-label="Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="footer-link" href="" target="_blank" aria-label="Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </li>
+        </ul>
+        <div class="w-100"></div>
+        <img class="float-right" src="./images/Bunker.svg" id="bunker-logo-footer" alt="company logo for bunker">
+      </div>
     </div>
-    <div class="col-md-4">
-<p>Copyright © 2020 Bunker Web Design Studio</p>
-    </div>    
-    <div class="col-md-4">
-<a href="index.html"><img src="./images/Bunker.svg" alt="logo for bunker web dev studio" id="footer-logo"></a>
-    </div>
-  </div>
-
-</footer>
+  </footer>
     <!--BOOTSTRAP JAVA / JQUERRY-->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
