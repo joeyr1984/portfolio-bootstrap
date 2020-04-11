@@ -2,113 +2,108 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bunker Web-Design Studio</title>
-    <!--STYLE SHEET FROM BOOTSTRAP-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <!--FONT-->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <!--MY OWN STYLE SHEET-->
-    <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bunker Web-Design Studio</title>
+  <!--STYLE SHEET FROM BOOTSTRAP-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!--FONT-->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+    integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+  <!--MY OWN STYLE SHEET-->
+  <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <!--NAV-->
-    <nav class="navbar fixed-top nav-theme row">
-
-      <a class="col-sm" href="./index.html"><img src="./images/ducky.svg" id="ducky-logo"
-          alt="logo image of rubber ducky"></a>
-    
-      <div class="col-sm"><a href="index.html"><img class="mx-auto" src="./images/Bunker.svg" id="bunker-logo" alt="company logo for bunker"></a>
-      </div>
-      <div class="col-sm">
-      <ul class="navbar-nav navbar-expand-lg flex-row nav-justified">
-        <li class="nav-item">
-          <a class="nav-link nav-anchor" href="./index.html" title="find more about Bunker by clicking here">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link nav-anchor" href="portfolio.html" title="see our work by clicking here">Portfolio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link nav-anchor" href="./contact.html" title="click here to contact us">Contact<span
+  <!--Nav-->
+  <nav class="navbar fixed-top nav-theme row no-gutters">
+    <a class="col-sm" href="./index.html"><img src="./images/ducky.svg" id="ducky-logo"
+        alt="logo image of rubber ducky">
+    </a>
+    <div class="col-sm">
+      <img class="mx-auto" src="./images/Bunker.svg" id="bunker-logo" alt="company logo for bunker">
+    </div>
+    <ul class="nav col-sm nav-theme-link">
+      <li class="nav-item">
+        <a class="nav-link nav-anchor" href="./index.html" title="find more about Bunker by clicking here">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link nav-anchor" href="portfolio.html" title="see our work by clicking here">Work</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link nav-anchor" href="./contact.html" title="click here to contact us">Contact<span
             class="sr-only">(current)</span></a>
-        </li>
-      </ul>
-    </div>
-    </nav>
-    <br><br><br>
-<!--contact section-->
-    <div class="container contact" id="backbox">
-      <div class="row">
-        <div class="col-md-3">
-          <div class="contact-info">
-              <img src="./images/contact-us.svg" alt="contact us text">
-          </div>
+      </li>
+    </ul>
+  </nav>
+  <main class="container mt-5">
+    <div class="jumbotron theme-jumbotron d-flex justify-content-center">
+      <form class="w-75">
+        <div class="form-group">
+          <label for="nameInput">Name</label>
+          <input type="text" class="form-control" id="nameInput" placeholder="John Smith"
+            title="Please enter your first and last name">
         </div>
-        <div class="col-md-9">
-          <div class="contact-form">
-            <div class="form-group">
-              <label class="control-label col-sm-2" for="fname">First Name:</label>
-              <div class="col-sm-10">          
-              <input type="text" class="form-control" id="fname" placeholder="Enter First Name" name="fname">
-              </div>
-            </div>
-            <div class="form-group">
-              <label class="control-label col-sm-2" for="lname">Last Name:</label>
-              <div class="col-sm-10">          
-              <input type="text" class="form-control" id="lname" placeholder="Enter Last Name" name="lname">
-              </div>
-            </div>
-            <div class="form-group">
-              <label class="control-label col-sm-2" for="email">Email:</label>
-              <div class="col-sm-10">
-              <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
-              </div>
-            </div>
-            <div class="form-group">
-              <label class="control-label col-sm-2" for="comment">Comment:</label>
-              <div class="col-sm-10">
-              <textarea class="form-control" rows="5" id="comment"></textarea>
-              </div>
-            </div>
-            <div class="form-group">        
-              <div class="col-sm-offset-2 col-sm-10">
-              <button type="submit" class="btn btn-default">Submit</button>
-              </div>
-            </div>
-          </div>
+        <div class="form-group">
+          <label for="emailAddressInput">Email</label>
+          <input type="email" class="form-control" id="emailAddressInput" placeholder="name@example.com"
+            title="Please enter your email address">
         </div>
-      </div>
+        <div class="form-group">
+          <label for="messageTextAreaInput">Message</label>
+          <textarea class="form-control" id="messageTextAreaInput" rows="5"></textarea>
+        </div>
+        <button type="submit" class="btn theme-submit float-right" placeholder="Enter you message here"
+          title="Please enter your message">Submit</button>
+      </form>
     </div>
-<br><br>
-      <!--FOOTER-->
-  <footer>
+  </main>
+
+  <!--FOOTER-->
+  <footer class="footer theme-footer p-3">
     <div class="row">
-      <div class="col-md-4">
-        Contact
-  
+      <div class="col-10">
+        <div class="row" id="contact-us-info">
+          <span class="col-sm-2 font-weight-bold d-flex justify-content-end">CONTACT US</span>
+          <span class="col-sm-10">+1 (123)456-7890<br />webdev@bunker.com</span>
+        </div>
       </div>
-      <div class="col-md-4">
-  <p>Copyright © 2020 Bunker Web Design Studio</p>
-      </div>    
-      <div class="col-md-4">
-  <a href="index.html"><img src="./images/Bunker.svg" alt="logo for bunker web dev studio" id="footer-logo"></a>
+      <div class="col-2">
+        <ul class="d-flex list-inline justify-content-end">
+          <li class="list-inline-item">
+            <a class="footer-link" ref="" target="_blank" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="footer-link" href="" target="_blank" aria-label="Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="footer-link" href="" target="_blank" aria-label="Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </li>
+        </ul>
+        <div class="w-100"></div>
+        <img class="float-right" src="./images/Bunker.svg" id="bunker-logo-footer" alt="company logo for bunker">
       </div>
     </div>
-  
   </footer>
-    <!--BOOTSTRAP JAVA / JQUERRY-->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+
+  <!--BOOTSTRAP JAVA / JQUERRY-->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
 </body>
 
 </html>
