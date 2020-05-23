@@ -8,5 +8,9 @@ Index.html will be the main page where i use "<a>" tags to link to my portfolio 
 
 Leveraging the bootstrap grid framework to create a layout of 3 rows X 12 columns 
 
+## link
+
+https://joeyr1984.github.io/portfolio-bootstrap/
+
 ## screneshot of working app
 ![GitHub Logo](/images/mock-ups/mock-up-about.png)
